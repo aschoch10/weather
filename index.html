@@ -11,13 +11,25 @@
 </head>
 
 <body>
-    <div class="container text-center">
-
-        <h2>Weather App</h2>
-        <div class="d-flex justify-content-center">
-            <input class="form-control w-50 " type="text" oninput="alert('Ahhhhh!')" />
-            <br>
-            <button class="btn btn-success">Search</button>
+    <div class="container">
+        <div class="row  bg-info pt-5 pb-5">
+            <div class="col">
+                <h1>Weather App</h1>
+            </div>
+            <div class="col d-flex justify-content-end justify-content-around">
+                <h2>Seattle </h2>
+                <h2>Tacoma </h2>
+                <h2>Chehalis </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-end align-items-center">
+                <h5>Show tempurature in: </h5>
+                <select class="form-control" style=" width: 35px;"type="select" oninput="alert('Ahhhhh!')"  name="temps" id="temps">
+                    <option value="c">&deg;C</option>
+                    <option value="f">&deg;F</option>
+                </select>
+            </div>
         </div>
         <img src="images/cookie.png" alt="cookie">
         <img src="images/some_clouds.png" alt="cookie">
