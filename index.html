@@ -11,30 +11,65 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        
         <div class="row  bg-info pt-5 pb-5">
-            <div class="col">
+            <div class="col" style="margin-left: 10%;">
                 <h1>Weather App</h1>
             </div>
             <div class="col d-flex justify-content-end justify-content-around">
-                <h2>Seattle </h2>
+                <h2 onclick="alert('weather for Seattle')">Seattle </h2>
                 <h2>Tacoma </h2>
                 <h2>Chehalis </h2>
             </div>
         </div>
+        
         <div class="row">
+            <p />
             <div class="col d-flex justify-content-end align-items-center">
                 <h5>Show tempurature in: </h5>
-                <select class="form-control" style=" width: 35px;"type="select" oninput="alert('Ahhhhh!')"  name="temps" id="temps">
+                <select class="form-control" style=" width: 35px;" type="select" oninput="alert('Ahhhhh!')" name="temps"
+                    id="temps">
                     <option value="c">&deg;C</option>
                     <option value="f">&deg;F</option>
                 </select>
             </div>
         </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col text-center">
+                <h3>Today</h3>
+                <img src="images/some_clouds.png" alt="clouds" style="width:120px;height:120px;">
+                <p>weather data</p>
+                <p>&deg;F</p>
+            </div>
+            
+            <div class="col text-center">
+                <h3>Tomorrow</h3>
+                <img src="images/some_rain.png" alt="rain" style="width:120px;height:120px;">
+                <p>weather data</p>
+                <p>&deg;F</p>
+            </div>
+            
+            <div class="col text-center">
+                <h3>Day After</h3>
+                <img src="images/some_sun.png" alt="sun" style="width:120px;height:120px;">
+                <p>weather data</p>
+                <p>&deg;F</p>
+            </div>
+            
+            <div class="col text-center">
+                <h3>3 days</h3>
+                <img src="images/some_clouds.png" alt="clouds" style="width:120px;height:120px;">
+                <p>weather data</p>
+                <p>&deg;F</p>
+            </div>
+        </div>
         <img src="images/cookie.png" alt="cookie">
-        <img src="images/some_clouds.png" alt="cookie">
-        <img src="images/some_rain.png" alt="cookie">
-        <img src="images/some_sun.png" alt="cookie">
+        <!-- <img src="images/some_clouds.png" alt="clouds" style="width:120px;height:120px;">
+        <img src="images/some_rain.png" alt="rain" style="width:120px;height:120px;">
+        <img src="images/some_sun.png" alt="sun" style="width:120px;height:120px;"> -->
     </div>
     <script src="script.js"></script>
 </body>
